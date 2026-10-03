@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Recommendation #{{ record['id'] }} | PocketSmart{% endblock %}{% block content %}<section class="page-head"><p class="eyebrow">{{ record['planner_type']|upper }} RECOMMENDATION</p><h1>Your Personalized Budget Plan</h1><p>Generated {{ record['created_at'] }}</p></section>{% include 'recommendation_result.html' %}{% endblock %}
